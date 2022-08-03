@@ -124,30 +124,36 @@ class AddressBook {
             ", emailId='" + this.emailId;
     }
 }
-let addressBook = new AddressBook("Shravan", "Kumar", "Ghatkesar", "Hyderabad", "Telanagana", 8765, 8766483838, "sraankum334");
-console.log(addressBook.toString());
+let addressBook = new AddressBook("Sravan", "Kumar", "Medak", "Delhi", "Haryana", 8765, 124554549, "sravanjtna49");
+let addressBook1 = new AddressBook("Harik", "Bhai", "Vamaak", "Mumbai", "Kerala", 9812, 555555590, "dhsjkhsyrh34");
+let addressBookArray = new Array();
+addressBookArray.push(addressBook);
+addressBookArray.push(addressBook1);
+addressBookArray.forEach(function(addressBook){
+console.log(addressBook);
+});
 try {
-    addressBook.setFirstName = "kumaru";
+    addressBook.setFirstName = "himalas";
 } catch (e) {
     console.error(e);
 }
 try {
-    addressBook.setLastName = "Uddav";
+    addressBook.setLastName = "Bilakur";
 } catch (e) {
     console.error(e);
 }
 try {
-    addressBook.setAddress = "Amara";
+    addressBook.setAddress = "Kamal";
 } catch (e) {
     console.error(e);
 }
 try {
-    addressBook.setCity = "Medak";
+    addressBook.setCity = "Mumbai";
 } catch (e) {
     console.error(e);
 }
 try {
-    addressBook.setState = "MGoaa";
+    addressBook.setState = "Haryana";
 } catch (e) {
     console.error(e);
 }
@@ -157,12 +163,12 @@ try {
     console.error(e);
 }
 try {
-    addressBook.setPhoneNumber = "9384754556";
+    addressBook.setPhoneNumber = "454454656";
 } catch (e) {
     console.error(e);
 }
 try {
-    addressBook.setEmailId = "lumaruuddav";
+    addressBook.setEmailId = "ghidksjsksk";
 } catch (e) {
     console.error(e);
 }
